@@ -58,5 +58,7 @@ def init_model(engine):
 
 # Import your model modules here.
 from giveaway.model.auth import User, Group, Permission
+from giveaway.model.client import Client
+from giveaway.model.giveaway import Giveaway
 
-__all__ = ('User', 'Group', 'Permission')
+__all__ = ('User', 'Group', 'Permission', 'Client', 'Giveaway')

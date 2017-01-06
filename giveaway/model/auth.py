@@ -89,6 +89,7 @@ class User(DeclarativeBase):
     display_name = Column(Unicode(255))
     _password = Column('password', Unicode(128))
     created = Column(DateTime, default=datetime.now)
+    giveaways = relation('Giveaway', backref='user', lazy='dynamic')
 
     def __repr__(self):
         return '<User: name=%s, email=%s, display=%s>' % (
