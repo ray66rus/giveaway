@@ -1,4 +1,7 @@
 from django.http import HttpResponse
+from .models import Giveaway
 
 def index(request):
-    return HttpResponse("Hello, world. You're at the polls index.")
+    latest_giveaways_list = Giveaway.objects.order_by('-date')[:10]
+    output = ', '.join([str(g.client.first_name) for g in latest_giveaways_list])
+    return HttpResponse(output)

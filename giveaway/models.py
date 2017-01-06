@@ -14,10 +14,10 @@ class Client(models.Model):
 class Giveaway(models.Model):
     date = models.DateField()
     goods_number = models.PositiveIntegerField()
-    client_id = models.ForeignKey(
+    client = models.ForeignKey(
         Client,
         on_delete=models.CASCADE,
-        verbose_name="client",
+        verbose_name="client object",
     )
 
 

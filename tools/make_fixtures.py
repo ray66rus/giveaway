@@ -35,7 +35,7 @@ def create_giveaways():
 				'fields': {
 					'date': time.strftime('%Y-%m-%d', tuple(date)),
 					'goods_number' : goods,
-					'client_id': i
+					'client': i
 				}
 			})
 			counter += 1
