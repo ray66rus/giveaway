@@ -1,20 +1,16 @@
-*.py[co]
-
-# Default development database
-devdata.db
-
-# Default data directory
-data/*
-
-# Packages
-*.egg
-*.egg-info
-dist
-build
-
-# Installer logs
-pip-log.txt
-
-# Unit test / coverage reports
-.coverage
-.tox
+*~
+*.orig
+*.pyc
+*.rej
+.installed.cfg
+__minitage__*
+bin/*
+develop-eggs
+downloads
+eggs
+log
+parts
+media/uploads
+tmp
+.DS_Store
+db.sqlite3

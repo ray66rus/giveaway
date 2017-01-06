@@ -1,4 +1,0 @@
-recursive-include giveaway/public *
-include giveaway/public/favicon.ico
-recursive-include giveaway/i18n *
-recursive-include giveaway/templates *
