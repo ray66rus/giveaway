@@ -1,12 +1,18 @@
 import logging
 import json
 from functools import reduce
+from django import forms
 from django.http import HttpResponse, JsonResponse
+from django.template import loader
 from django.db.models import Q
-from .models import Giveaway, Client
 from django.conf import settings
+from .models import Giveaway, Client
 
 DEFAULT_SEARCH_LIMIT = 5
+
+def index(request):
+    template = loader.get_template('index.html')
+    return HttpResponse(template.render({}, request))
 
 def list(request):
     latest_giveaways_list = Giveaway.objects.order_by('-date')[:10]
