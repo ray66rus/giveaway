@@ -1,1316 +1,1271 @@
 [
     {
-        "pk": 0,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-06",
-            "goods_number": 5,
-            "client": 0
-        }
+            "goods_number": 6,
+            "client": 0,
+            "date": "2017-01-04"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 0
     },
     {
-        "pk": 1,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-06",
-            "goods_number": 5,
-            "client": 0
-        }
-    },
-    {
-        "pk": 2,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-06",
             "goods_number": 3,
-            "client": 0
-        }
+            "client": 5,
+            "date": "2017-01-04"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 1
     },
     {
-        "pk": 3,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-01",
-            "goods_number": 4,
-            "client": 1
-        }
+            "goods_number": 6,
+            "client": 5,
+            "date": "2017-01-07"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 2
     },
     {
-        "pk": 4,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-02",
-            "goods_number": 2,
-            "client": 1
-        }
+            "goods_number": 1,
+            "client": 5,
+            "date": "2017-01-07"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 3
     },
     {
-        "pk": 5,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-03",
-            "goods_number": 4,
-            "client": 3
-        }
-    },
-    {
-        "pk": 6,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-05",
             "goods_number": 5,
-            "client": 3
-        }
+            "client": 6,
+            "date": "2017-01-07"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 4
     },
     {
-        "pk": 7,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-01",
             "goods_number": 4,
-            "client": 5
-        }
+            "client": 6,
+            "date": "2017-01-07"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 5
     },
     {
-        "pk": 8,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-04",
             "goods_number": 3,
-            "client": 5
-        }
+            "client": 7,
+            "date": "2017-01-04"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 6
     },
     {
-        "pk": 9,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-05",
-            "goods_number": 1,
-            "client": 5
-        }
-    },
-    {
-        "pk": 10,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-06",
             "goods_number": 5,
-            "client": 6
-        }
+            "client": 7,
+            "date": "2017-01-05"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 7
     },
     {
-        "pk": 11,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-05",
+            "goods_number": 1,
+            "client": 7,
+            "date": "2017-01-05"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 8
+    },
+    {
+        "fields": {
+            "goods_number": 3,
+            "client": 8,
+            "date": "2017-01-07"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 9
+    },
+    {
+        "fields": {
+            "goods_number": 3,
+            "client": 8,
+            "date": "2017-01-01"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 10
+    },
+    {
+        "fields": {
+            "goods_number": 6,
+            "client": 9,
+            "date": "2017-01-07"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 11
+    },
+    {
+        "fields": {
+            "goods_number": 5,
+            "client": 10,
+            "date": "2017-01-01"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 12
+    },
+    {
+        "fields": {
+            "goods_number": 6,
+            "client": 12,
+            "date": "2017-01-07"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 13
+    },
+    {
+        "fields": {
+            "goods_number": 1,
+            "client": 12,
+            "date": "2017-01-05"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 14
+    },
+    {
+        "fields": {
+            "goods_number": 1,
+            "client": 12,
+            "date": "2017-01-01"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 15
+    },
+    {
+        "fields": {
             "goods_number": 4,
-            "client": 6
-        }
+            "client": 15,
+            "date": "2017-01-05"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 16
     },
     {
-        "pk": 12,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-06",
+            "goods_number": 6,
+            "client": 15,
+            "date": "2017-01-05"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 17
+    },
+    {
+        "fields": {
             "goods_number": 2,
-            "client": 6
-        }
+            "client": 15,
+            "date": "2017-01-07"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 18
     },
     {
-        "pk": 13,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-04",
-            "goods_number": 5,
-            "client": 8
-        }
-    },
-    {
-        "pk": 14,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-02",
             "goods_number": 3,
-            "client": 8
-        }
+            "client": 16,
+            "date": "2017-01-05"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 19
     },
     {
-        "pk": 15,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-06",
+            "goods_number": 2,
+            "client": 16,
+            "date": "2017-01-04"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 20
+    },
+    {
+        "fields": {
+            "goods_number": 1,
+            "client": 17,
+            "date": "2017-01-01"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 21
+    },
+    {
+        "fields": {
+            "goods_number": 2,
+            "client": 18,
+            "date": "2017-01-07"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 22
+    },
+    {
+        "fields": {
+            "goods_number": 2,
+            "client": 18,
+            "date": "2017-01-05"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 23
+    },
+    {
+        "fields": {
             "goods_number": 3,
-            "client": 9
-        }
+            "client": 18,
+            "date": "2017-01-04"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 24
     },
     {
-        "pk": 16,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-06",
+            "goods_number": 3,
+            "client": 19,
+            "date": "2017-01-05"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 25
+    },
+    {
+        "fields": {
+            "goods_number": 1,
+            "client": 21,
+            "date": "2017-01-05"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 26
+    },
+    {
+        "fields": {
+            "goods_number": 1,
+            "client": 21,
+            "date": "2017-01-04"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 27
+    },
+    {
+        "fields": {
             "goods_number": 4,
-            "client": 9
-        }
+            "client": 21,
+            "date": "2017-01-07"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 28
     },
     {
-        "pk": 17,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-01",
-            "goods_number": 2,
-            "client": 10
-        }
+            "goods_number": 5,
+            "client": 23,
+            "date": "2017-01-02"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 29
     },
     {
-        "pk": 18,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-01",
-            "goods_number": 2,
-            "client": 11
-        }
-    },
-    {
-        "pk": 19,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-01",
-            "goods_number": 6,
-            "client": 12
-        }
-    },
-    {
-        "pk": 20,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-06",
-            "goods_number": 6,
-            "client": 13
-        }
-    },
-    {
-        "pk": 21,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-03",
-            "goods_number": 6,
-            "client": 13
-        }
-    },
-    {
-        "pk": 22,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-06",
-            "goods_number": 3,
-            "client": 13
-        }
-    },
-    {
-        "pk": 23,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-04",
-            "goods_number": 6,
-            "client": 15
-        }
-    },
-    {
-        "pk": 24,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-06",
-            "goods_number": 3,
-            "client": 16
-        }
-    },
-    {
-        "pk": 25,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-02",
-            "goods_number": 2,
-            "client": 19
-        }
-    },
-    {
-        "pk": 26,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-01",
-            "goods_number": 2,
-            "client": 19
-        }
-    },
-    {
-        "pk": 27,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-02",
-            "goods_number": 3,
-            "client": 19
-        }
-    },
-    {
-        "pk": 28,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-03",
-            "goods_number": 6,
-            "client": 20
-        }
-    },
-    {
-        "pk": 29,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-04",
-            "goods_number": 1,
-            "client": 23
-        }
-    },
-    {
-        "pk": 30,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-03",
             "goods_number": 4,
-            "client": 24
-        }
+            "client": 24,
+            "date": "2017-01-03"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 30
     },
     {
-        "pk": 31,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-03",
+            "goods_number": 2,
+            "client": 24,
+            "date": "2017-01-06"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 31
+    },
+    {
+        "fields": {
             "goods_number": 4,
-            "client": 24
-        }
+            "client": 24,
+            "date": "2017-01-06"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 32
     },
     {
-        "pk": 32,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-01",
             "goods_number": 5,
-            "client": 25
-        }
+            "client": 25,
+            "date": "2017-01-01"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 33
     },
     {
-        "pk": 33,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-02",
+            "goods_number": 5,
+            "client": 25,
+            "date": "2017-01-06"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 34
+    },
+    {
+        "fields": {
             "goods_number": 4,
-            "client": 25
-        }
+            "client": 28,
+            "date": "2017-01-04"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 35
     },
     {
-        "pk": 34,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-03",
             "goods_number": 5,
-            "client": 26
-        }
+            "client": 28,
+            "date": "2017-01-02"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 36
     },
     {
-        "pk": 35,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-03",
-            "goods_number": 1,
-            "client": 27
-        }
-    },
-    {
-        "pk": 36,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-01",
             "goods_number": 4,
-            "client": 27
-        }
+            "client": 28,
+            "date": "2017-01-04"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 37
     },
     {
-        "pk": 37,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-05",
             "goods_number": 5,
-            "client": 27
-        }
+            "client": 29,
+            "date": "2017-01-07"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 38
     },
     {
-        "pk": 38,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-03",
+            "goods_number": 4,
+            "client": 29,
+            "date": "2017-01-05"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 39
+    },
+    {
+        "fields": {
             "goods_number": 6,
-            "client": 29
-        }
+            "client": 30,
+            "date": "2017-01-03"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 40
     },
     {
-        "pk": 39,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-05",
+            "goods_number": 5,
+            "client": 30,
+            "date": "2017-01-04"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 41
+    },
+    {
+        "fields": {
+            "goods_number": 5,
+            "client": 32,
+            "date": "2017-01-06"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 42
+    },
+    {
+        "fields": {
+            "goods_number": 4,
+            "client": 32,
+            "date": "2017-01-02"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 43
+    },
+    {
+        "fields": {
+            "goods_number": 6,
+            "client": 35,
+            "date": "2017-01-04"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 44
+    },
+    {
+        "fields": {
+            "goods_number": 4,
+            "client": 35,
+            "date": "2017-01-03"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 45
+    },
+    {
+        "fields": {
+            "goods_number": 2,
+            "client": 37,
+            "date": "2017-01-04"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 46
+    },
+    {
+        "fields": {
+            "goods_number": 2,
+            "client": 38,
+            "date": "2017-01-02"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 47
+    },
+    {
+        "fields": {
+            "goods_number": 5,
+            "client": 38,
+            "date": "2017-01-01"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 48
+    },
+    {
+        "fields": {
+            "goods_number": 4,
+            "client": 38,
+            "date": "2017-01-04"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 49
+    },
+    {
+        "fields": {
+            "goods_number": 4,
+            "client": 39,
+            "date": "2017-01-04"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 50
+    },
+    {
+        "fields": {
             "goods_number": 1,
-            "client": 29
-        }
+            "client": 39,
+            "date": "2017-01-05"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 51
     },
     {
-        "pk": 40,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-02",
+            "goods_number": 5,
+            "client": 39,
+            "date": "2017-01-04"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 52
+    },
+    {
+        "fields": {
             "goods_number": 3,
-            "client": 30
-        }
+            "client": 40,
+            "date": "2017-01-01"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 53
     },
     {
-        "pk": 41,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-05",
+            "goods_number": 6,
+            "client": 40,
+            "date": "2017-01-06"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 54
+    },
+    {
+        "fields": {
+            "goods_number": 3,
+            "client": 41,
+            "date": "2017-01-05"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 55
+    },
+    {
+        "fields": {
+            "goods_number": 6,
+            "client": 43,
+            "date": "2017-01-04"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 56
+    },
+    {
+        "fields": {
+            "goods_number": 3,
+            "client": 43,
+            "date": "2017-01-05"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 57
+    },
+    {
+        "fields": {
+            "goods_number": 5,
+            "client": 44,
+            "date": "2017-01-05"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 58
+    },
+    {
+        "fields": {
             "goods_number": 4,
-            "client": 31
-        }
+            "client": 46,
+            "date": "2017-01-06"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 59
     },
     {
-        "pk": 42,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-06",
-            "goods_number": 6,
-            "client": 31
-        }
-    },
-    {
-        "pk": 43,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-03",
-            "goods_number": 6,
-            "client": 31
-        }
-    },
-    {
-        "pk": 44,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-01",
-            "goods_number": 5,
-            "client": 32
-        }
-    },
-    {
-        "pk": 45,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-02",
-            "goods_number": 3,
-            "client": 32
-        }
-    },
-    {
-        "pk": 46,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-05",
-            "goods_number": 3,
-            "client": 32
-        }
-    },
-    {
-        "pk": 47,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-01",
-            "goods_number": 6,
-            "client": 33
-        }
-    },
-    {
-        "pk": 48,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-01",
-            "goods_number": 3,
-            "client": 33
-        }
-    },
-    {
-        "pk": 49,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-02",
-            "goods_number": 5,
-            "client": 34
-        }
-    },
-    {
-        "pk": 50,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-02",
-            "goods_number": 1,
-            "client": 35
-        }
-    },
-    {
-        "pk": 51,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-06",
             "goods_number": 2,
-            "client": 35
-        }
+            "client": 46,
+            "date": "2017-01-01"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 60
     },
     {
-        "pk": 52,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-02",
+            "goods_number": 5,
+            "client": 47,
+            "date": "2017-01-07"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 61
+    },
+    {
+        "fields": {
             "goods_number": 4,
-            "client": 36
-        }
+            "client": 47,
+            "date": "2017-01-07"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 62
     },
     {
-        "pk": 53,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-05",
-            "goods_number": 5,
-            "client": 36
-        }
+            "goods_number": 6,
+            "client": 47,
+            "date": "2017-01-05"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 63
     },
     {
-        "pk": 54,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-06",
+            "goods_number": 1,
+            "client": 49,
+            "date": "2017-01-04"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 64
+    },
+    {
+        "fields": {
             "goods_number": 3,
-            "client": 37
-        }
+            "client": 49,
+            "date": "2017-01-05"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 65
     },
     {
-        "pk": 55,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-04",
+            "goods_number": 6,
+            "client": 49,
+            "date": "2017-01-07"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 66
+    },
+    {
+        "fields": {
             "goods_number": 5,
-            "client": 38
-        }
+            "client": 50,
+            "date": "2017-01-05"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 67
     },
     {
-        "pk": 56,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-06",
-            "goods_number": 1,
-            "client": 38
-        }
+            "goods_number": 6,
+            "client": 50,
+            "date": "2017-01-04"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 68
     },
     {
-        "pk": 57,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-04",
+            "goods_number": 5,
+            "client": 50,
+            "date": "2017-01-04"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 69
+    },
+    {
+        "fields": {
+            "goods_number": 5,
+            "client": 53,
+            "date": "2017-01-05"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 70
+    },
+    {
+        "fields": {
             "goods_number": 2,
-            "client": 39
-        }
+            "client": 54,
+            "date": "2017-01-04"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 71
     },
     {
-        "pk": 58,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-06",
             "goods_number": 2,
-            "client": 39
-        }
+            "client": 54,
+            "date": "2017-01-06"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 72
     },
     {
-        "pk": 59,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-04",
+            "goods_number": 6,
+            "client": 56,
+            "date": "2017-01-07"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 73
+    },
+    {
+        "fields": {
             "goods_number": 3,
-            "client": 39
-        }
+            "client": 56,
+            "date": "2017-01-03"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 74
     },
     {
-        "pk": 60,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-01",
-            "goods_number": 1,
-            "client": 40
-        }
+            "goods_number": 6,
+            "client": 56,
+            "date": "2017-01-02"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 75
     },
     {
-        "pk": 61,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-03",
-            "goods_number": 5,
-            "client": 41
-        }
-    },
-    {
-        "pk": 62,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-03",
             "goods_number": 3,
-            "client": 41
-        }
+            "client": 57,
+            "date": "2017-01-03"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 76
     },
     {
-        "pk": 63,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-03",
-            "goods_number": 4,
-            "client": 41
-        }
+            "goods_number": 5,
+            "client": 57,
+            "date": "2017-01-02"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 77
     },
     {
-        "pk": 64,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-06",
-            "goods_number": 4,
-            "client": 42
-        }
-    },
-    {
-        "pk": 65,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-02",
-            "goods_number": 6,
-            "client": 42
-        }
-    },
-    {
-        "pk": 66,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-04",
-            "goods_number": 6,
-            "client": 43
-        }
-    },
-    {
-        "pk": 67,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-03",
-            "goods_number": 2,
-            "client": 44
-        }
-    },
-    {
-        "pk": 68,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-01",
-            "goods_number": 6,
-            "client": 44
-        }
-    },
-    {
-        "pk": 69,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-06",
             "goods_number": 1,
-            "client": 44
-        }
+            "client": 57,
+            "date": "2017-01-05"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 78
     },
     {
-        "pk": 70,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-02",
+            "goods_number": 2,
+            "client": 61,
+            "date": "2017-01-03"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 79
+    },
+    {
+        "fields": {
+            "goods_number": 6,
+            "client": 61,
+            "date": "2017-01-06"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 80
+    },
+    {
+        "fields": {
+            "goods_number": 5,
+            "client": 62,
+            "date": "2017-01-06"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 81
+    },
+    {
+        "fields": {
             "goods_number": 3,
-            "client": 46
-        }
+            "client": 63,
+            "date": "2017-01-01"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 82
     },
     {
-        "pk": 71,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-04",
-            "goods_number": 4,
-            "client": 46
-        }
-    },
-    {
-        "pk": 72,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-01",
-            "goods_number": 1,
-            "client": 49
-        }
-    },
-    {
-        "pk": 73,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-04",
             "goods_number": 2,
-            "client": 50
-        }
+            "client": 63,
+            "date": "2017-01-04"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 83
     },
     {
-        "pk": 74,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-04",
+            "goods_number": 5,
+            "client": 64,
+            "date": "2017-01-02"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 84
+    },
+    {
+        "fields": {
             "goods_number": 6,
-            "client": 50
-        }
+            "client": 65,
+            "date": "2017-01-05"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 85
     },
     {
-        "pk": 75,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-02",
+            "goods_number": 4,
+            "client": 65,
+            "date": "2017-01-05"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 86
+    },
+    {
+        "fields": {
+            "goods_number": 6,
+            "client": 66,
+            "date": "2017-01-07"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 87
+    },
+    {
+        "fields": {
+            "goods_number": 1,
+            "client": 67,
+            "date": "2017-01-02"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 88
+    },
+    {
+        "fields": {
+            "goods_number": 1,
+            "client": 67,
+            "date": "2017-01-07"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 89
+    },
+    {
+        "fields": {
+            "goods_number": 1,
+            "client": 67,
+            "date": "2017-01-07"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 90
+    },
+    {
+        "fields": {
+            "goods_number": 6,
+            "client": 68,
+            "date": "2017-01-01"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 91
+    },
+    {
+        "fields": {
+            "goods_number": 5,
+            "client": 70,
+            "date": "2017-01-04"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 92
+    },
+    {
+        "fields": {
+            "goods_number": 5,
+            "client": 70,
+            "date": "2017-01-02"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 93
+    },
+    {
+        "fields": {
             "goods_number": 3,
-            "client": 54
-        }
+            "client": 71,
+            "date": "2017-01-03"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 94
     },
     {
-        "pk": 76,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-04",
-            "goods_number": 4,
-            "client": 54
-        }
-    },
-    {
-        "pk": 77,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-02",
-            "goods_number": 5,
-            "client": 55
-        }
-    },
-    {
-        "pk": 78,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-06",
             "goods_number": 2,
-            "client": 55
-        }
+            "client": 71,
+            "date": "2017-01-06"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 95
     },
     {
-        "pk": 79,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-04",
-            "goods_number": 2,
-            "client": 55
-        }
-    },
-    {
-        "pk": 80,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-04",
-            "goods_number": 5,
-            "client": 56
-        }
-    },
-    {
-        "pk": 81,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-05",
-            "goods_number": 2,
-            "client": 56
-        }
-    },
-    {
-        "pk": 82,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-04",
             "goods_number": 3,
-            "client": 56
-        }
+            "client": 71,
+            "date": "2017-01-04"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 96
     },
     {
-        "pk": 83,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-02",
-            "goods_number": 4,
-            "client": 59
-        }
-    },
-    {
-        "pk": 84,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-02",
-            "goods_number": 2,
-            "client": 59
-        }
-    },
-    {
-        "pk": 85,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-02",
-            "goods_number": 5,
-            "client": 60
-        }
-    },
-    {
-        "pk": 86,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-01",
-            "goods_number": 2,
-            "client": 60
-        }
-    },
-    {
-        "pk": 87,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-03",
-            "goods_number": 6,
-            "client": 60
-        }
-    },
-    {
-        "pk": 88,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-03",
-            "goods_number": 6,
-            "client": 61
-        }
-    },
-    {
-        "pk": 89,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-05",
-            "goods_number": 5,
-            "client": 61
-        }
-    },
-    {
-        "pk": 90,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-06",
-            "goods_number": 6,
-            "client": 63
-        }
-    },
-    {
-        "pk": 91,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-06",
-            "goods_number": 4,
-            "client": 63
-        }
-    },
-    {
-        "pk": 92,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-03",
-            "goods_number": 5,
-            "client": 63
-        }
-    },
-    {
-        "pk": 93,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-04",
-            "goods_number": 1,
-            "client": 64
-        }
-    },
-    {
-        "pk": 94,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-05",
-            "goods_number": 2,
-            "client": 64
-        }
-    },
-    {
-        "pk": 95,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-01",
-            "goods_number": 2,
-            "client": 64
-        }
-    },
-    {
-        "pk": 96,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-02",
-            "goods_number": 6,
-            "client": 68
-        }
-    },
-    {
-        "pk": 97,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-05",
-            "goods_number": 5,
-            "client": 68
-        }
-    },
-    {
-        "pk": 98,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-05",
-            "goods_number": 4,
-            "client": 70
-        }
-    },
-    {
-        "pk": 99,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-02",
-            "goods_number": 6,
-            "client": 70
-        }
-    },
-    {
-        "pk": 100,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-06",
             "goods_number": 3,
-            "client": 70
-        }
+            "client": 73,
+            "date": "2017-01-06"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 97
     },
     {
-        "pk": 101,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-04",
-            "goods_number": 5,
-            "client": 71
-        }
+            "goods_number": 6,
+            "client": 73,
+            "date": "2017-01-05"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 98
     },
     {
-        "pk": 102,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-05",
-            "goods_number": 5,
-            "client": 72
-        }
+            "goods_number": 6,
+            "client": 73,
+            "date": "2017-01-03"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 99
     },
     {
-        "pk": 103,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-04",
             "goods_number": 1,
-            "client": 72
-        }
+            "client": 74,
+            "date": "2017-01-04"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 100
     },
     {
-        "pk": 104,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-03",
-            "goods_number": 2,
-            "client": 72
-        }
+            "goods_number": 1,
+            "client": 74,
+            "date": "2017-01-07"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 101
     },
     {
-        "pk": 105,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-01",
-            "goods_number": 2,
-            "client": 73
-        }
+            "goods_number": 5,
+            "client": 74,
+            "date": "2017-01-01"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 102
     },
     {
-        "pk": 106,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-01",
             "goods_number": 4,
-            "client": 74
-        }
+            "client": 75,
+            "date": "2017-01-03"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 103
     },
     {
-        "pk": 107,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-02",
-            "goods_number": 1,
-            "client": 75
-        }
-    },
-    {
-        "pk": 108,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-06",
-            "goods_number": 1,
-            "client": 75
-        }
-    },
-    {
-        "pk": 109,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-03",
             "goods_number": 5,
-            "client": 76
-        }
+            "client": 75,
+            "date": "2017-01-04"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 104
     },
     {
-        "pk": 110,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-04",
-            "goods_number": 1,
-            "client": 76
-        }
-    },
-    {
-        "pk": 111,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-05",
-            "goods_number": 1,
-            "client": 76
-        }
-    },
-    {
-        "pk": 112,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-02",
-            "goods_number": 1,
-            "client": 79
-        }
-    },
-    {
-        "pk": 113,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-06",
-            "goods_number": 4,
-            "client": 79
-        }
-    },
-    {
-        "pk": 114,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-03",
             "goods_number": 2,
-            "client": 79
-        }
+            "client": 76,
+            "date": "2017-01-05"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 105
     },
     {
-        "pk": 115,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-04",
-            "goods_number": 6,
-            "client": 80
-        }
+            "goods_number": 1,
+            "client": 77,
+            "date": "2017-01-05"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 106
     },
     {
-        "pk": 116,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-02",
-            "goods_number": 5,
-            "client": 80
-        }
-    },
-    {
-        "pk": 117,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-05",
             "goods_number": 3,
-            "client": 81
-        }
+            "client": 77,
+            "date": "2017-01-05"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 107
     },
     {
-        "pk": 118,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-01",
-            "goods_number": 1,
-            "client": 81
-        }
-    },
-    {
-        "pk": 119,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-05",
-            "goods_number": 4,
-            "client": 82
-        }
-    },
-    {
-        "pk": 120,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-02",
             "goods_number": 5,
-            "client": 82
-        }
+            "client": 77,
+            "date": "2017-01-07"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 108
     },
     {
-        "pk": 121,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-06",
             "goods_number": 1,
-            "client": 84
-        }
+            "client": 79,
+            "date": "2017-01-03"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 109
     },
     {
-        "pk": 122,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-05",
-            "goods_number": 6,
-            "client": 84
-        }
-    },
-    {
-        "pk": 123,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-01",
-            "goods_number": 5,
-            "client": 84
-        }
-    },
-    {
-        "pk": 124,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-04",
             "goods_number": 2,
-            "client": 85
-        }
+            "client": 79,
+            "date": "2017-01-06"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 110
     },
     {
-        "pk": 125,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-04",
+            "goods_number": 2,
+            "client": 80,
+            "date": "2017-01-02"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 111
+    },
+    {
+        "fields": {
+            "goods_number": 2,
+            "client": 80,
+            "date": "2017-01-04"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 112
+    },
+    {
+        "fields": {
             "goods_number": 1,
-            "client": 86
-        }
+            "client": 80,
+            "date": "2017-01-05"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 113
     },
     {
-        "pk": 126,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-02",
-            "goods_number": 5,
-            "client": 86
-        }
+            "goods_number": 2,
+            "client": 81,
+            "date": "2017-01-06"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 114
     },
     {
-        "pk": 127,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-01",
+            "goods_number": 1,
+            "client": 82,
+            "date": "2017-01-03"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 115
+    },
+    {
+        "fields": {
             "goods_number": 4,
-            "client": 87
-        }
+            "client": 82,
+            "date": "2017-01-06"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 116
     },
     {
-        "pk": 128,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-01",
-            "goods_number": 6,
-            "client": 87
-        }
-    },
-    {
-        "pk": 129,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-05",
             "goods_number": 1,
-            "client": 88
-        }
+            "client": 83,
+            "date": "2017-01-01"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 117
     },
     {
-        "pk": 130,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-04",
-            "goods_number": 1,
-            "client": 89
-        }
+            "goods_number": 2,
+            "client": 85,
+            "date": "2017-01-07"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 118
     },
     {
-        "pk": 131,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-05",
             "goods_number": 5,
-            "client": 90
-        }
+            "client": 85,
+            "date": "2017-01-02"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 119
     },
     {
-        "pk": 132,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-01",
+            "goods_number": 6,
+            "client": 85,
+            "date": "2017-01-07"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 120
+    },
+    {
+        "fields": {
             "goods_number": 3,
-            "client": 90
-        }
+            "client": 86,
+            "date": "2017-01-02"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 121
     },
     {
-        "pk": 133,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-03",
-            "goods_number": 6,
-            "client": 90
-        }
-    },
-    {
-        "pk": 134,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-06",
-            "goods_number": 5,
-            "client": 91
-        }
-    },
-    {
-        "pk": 135,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-05",
             "goods_number": 3,
-            "client": 92
-        }
+            "client": 86,
+            "date": "2017-01-01"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 122
     },
     {
-        "pk": 136,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-04",
-            "goods_number": 6,
-            "client": 93
-        }
+            "goods_number": 4,
+            "client": 86,
+            "date": "2017-01-04"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 123
     },
     {
-        "pk": 137,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-04",
-            "goods_number": 6,
-            "client": 93
-        }
+            "goods_number": 2,
+            "client": 88,
+            "date": "2017-01-04"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 124
     },
     {
-        "pk": 138,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-04",
+            "goods_number": 5,
+            "client": 88,
+            "date": "2017-01-05"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 125
+    },
+    {
+        "fields": {
+            "goods_number": 2,
+            "client": 89,
+            "date": "2017-01-06"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 126
+    },
+    {
+        "fields": {
+            "goods_number": 5,
+            "client": 90,
+            "date": "2017-01-05"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 127
+    },
+    {
+        "fields": {
             "goods_number": 3,
-            "client": 93
-        }
+            "client": 91,
+            "date": "2017-01-04"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 128
     },
     {
-        "pk": 139,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-02",
+            "goods_number": 4,
+            "client": 92,
+            "date": "2017-01-03"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 129
+    },
+    {
+        "fields": {
             "goods_number": 1,
-            "client": 96
-        }
+            "client": 92,
+            "date": "2017-01-07"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 130
     },
     {
-        "pk": 140,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-04",
-            "goods_number": 6,
-            "client": 96
-        }
-    },
-    {
-        "pk": 141,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-02",
             "goods_number": 5,
-            "client": 97
-        }
+            "client": 93,
+            "date": "2017-01-05"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 131
     },
     {
-        "pk": 142,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-04",
-            "goods_number": 5,
-            "client": 98
-        }
+            "goods_number": 2,
+            "client": 93,
+            "date": "2017-01-07"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 132
     },
     {
-        "pk": 143,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-06",
+            "goods_number": 4,
+            "client": 93,
+            "date": "2017-01-03"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 133
+    },
+    {
+        "fields": {
             "goods_number": 6,
-            "client": 99
-        }
+            "client": 94,
+            "date": "2017-01-01"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 134
     },
     {
-        "pk": 144,
-        "model": "giveaway.giveaway",
         "fields": {
-            "date": "2017-01-01",
-            "goods_number": 6,
-            "client": 99
-        }
-    },
-    {
-        "pk": 145,
-        "model": "giveaway.giveaway",
-        "fields": {
-            "date": "2017-01-02",
             "goods_number": 1,
-            "client": 99
-        }
+            "client": 95,
+            "date": "2017-01-05"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 135
+    },
+    {
+        "fields": {
+            "goods_number": 4,
+            "client": 95,
+            "date": "2017-01-06"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 136
+    },
+    {
+        "fields": {
+            "goods_number": 5,
+            "client": 96,
+            "date": "2017-01-03"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 137
+    },
+    {
+        "fields": {
+            "goods_number": 6,
+            "client": 97,
+            "date": "2017-01-03"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 138
+    },
+    {
+        "fields": {
+            "goods_number": 1,
+            "client": 97,
+            "date": "2017-01-06"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 139
+    },
+    {
+        "fields": {
+            "goods_number": 2,
+            "client": 99,
+            "date": "2017-01-05"
+        },
+        "model": "giveaway.giveaway",
+        "pk": 140
     }
 ]

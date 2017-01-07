@@ -5,7 +5,7 @@ import json
 def create_clients():
 	data = list()
 	for i, l in enumerate(open('names.txt', encoding='utf-8')):
-		name, fname, patr = l.split();
+		fname, name, patr = l.split();
 		data.append({
 			'model': 'giveaway.client',
 			'pk': i,

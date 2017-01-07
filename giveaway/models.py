@@ -10,6 +10,15 @@ class Client(models.Model):
     class Meta:
         unique_together = ('first_name', 'last_name', 'patronymic', 'year_of_birth', 'code_word')
 
+    def __str__(self):
+        if self.patronymic == '':
+            res = "{} {}, {}".format(self.first_name, self.last_name, self.year_of_birth)
+        else:
+            res = "{} {} {}, {}".format(self.first_name, self.patronymic, self.last_name, self.year_of_birth)
+        if self.code_word != '':
+            res += " ({})".format(self.code_word)
+        return res
+
 
 class Giveaway(models.Model):
     date = models.DateField()
