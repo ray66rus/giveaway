@@ -1,4 +1,10 @@
+import logging
 from django.db import models
+from django.conf import settings
+from datetime import datetime
+from django.utils.translation import ugettext as _
+
+DEFAULT_SEARCH_LIMIT = 5
 
 class Client(models.Model):
     first_name = models.TextField()
@@ -12,12 +18,24 @@ class Client(models.Model):
 
     def __str__(self):
         if self.patronymic == '':
-            res = "{} {}, {}".format(self.first_name, self.last_name, self.year_of_birth)
+            res = "{} {}, {} ".format(self.first_name, self.last_name, self.year_of_birth)
         else:
-            res = "{} {} {}, {}".format(self.first_name, self.patronymic, self.last_name, self.year_of_birth)
+            res = "{} {} {}, {} ".format(self.first_name, self.patronymic, self.last_name, self.year_of_birth)
+        res += _('year of birth')
         if self.code_word != '':
             res += " ({})".format(self.code_word)
         return res
+
+    def find_by_query(query):
+        if len(query) == 0 or query.isspace():
+            return []
+        clients = Client.objects.all()
+        for token in query.split():
+            clients = clients.filter(models.Q(first_name__iregex='^{}'.format(token)) |
+                                     models.Q(last_name__iregex='^{}'.format(token)) |
+                                     models.Q(patronymic__iregex='^{}'.format(token)))
+        search_limit = getattr(settings, 'CLIENTS_SEARCH_LIMIT', DEFAULT_SEARCH_LIMIT)
+        return clients[:search_limit]
 
 
 class Giveaway(models.Model):
@@ -29,4 +47,8 @@ class Giveaway(models.Model):
         verbose_name="client object",
     )
 
+    def this_month_giveaways(client=None):
+        today = datetime.now()
+        giveaways = Giveaway.objects.filter(date__year=today.year, date__month=today.month)
+        return giveaways.filter(client__id=client.id) if client else giveways
 

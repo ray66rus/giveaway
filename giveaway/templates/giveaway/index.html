@@ -1,0 +1,51 @@
+<script
+	src="https://code.jquery.com/jquery-3.1.1.min.js"
+	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	crossorigin="anonymous"></script>
+
+{% load bootstrap3 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'giveaway/easy-autocomplete.min.css' %}"> 
+<link rel="stylesheet" type="text/css" href="{% static 'giveaway/easy-autocomplete.themes.min.css' %}"> 
+<link rel="stylesheet" type="text/css" href="{% static 'giveaway/main.css' %}" />
+
+<script src="{% static 'giveaway/jquery.easy-autocomplete.min.js' %}"></script> 
+<script>
+    $(document).ready(function() {
+        var options = {
+			url: function(query) {
+				return "{% url 'find_clients' %}?query=" + query;
+			},
+			getValue: "client",
+			list: {   
+				sort: {
+					enabled: true
+				}
+			},
+			template: {
+				type: "custom",
+				method: function(value, item) {					
+					return "<span class='search-prompt " + (item.is_good ? 'good-client' : 'bad-client') + "'>" +
+							item.client +
+						"</span>"
+				}
+			},
+			requestDelay: 200,
+			theme: "round"
+        };
+
+        $("input[name=query]").easyAutocomplete(options);
+    });
+</script>
+
+{% block bootstrap3_content %}
+    <div class="container">
+        <form action="" method="post" class="form">
+            <input type="text" name="query" />
+        </form>
+    </div>
+{% endblock %}
+
