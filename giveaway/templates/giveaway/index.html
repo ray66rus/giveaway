@@ -19,17 +19,20 @@
 			url: function(query) {
 				return "{% url 'find_clients' %}?query=" + query;
 			},
-			getValue: "client",
-			list: {   
+			getValue: "name",
+			list: {
 				sort: {
 					enabled: true
-				}
+				},
+                onSelectItemEvent: function() {
+                    $("#client-id").val($("#client-query").getSelectedItemData().id);
+                }
 			},
 			template: {
 				type: "custom",
-				method: function(value, item) {					
+				method: function(value, item) {		
 					return "<span class='search-prompt " + (item.is_good ? 'good-client' : 'bad-client') + "'>" +
-							item.client +
+							item.name +
 						"</span>"
 				}
 			},
@@ -37,14 +40,18 @@
 			theme: "round"
         };
 
-        $("input[name=query]").easyAutocomplete(options);
+        $("#client-query")
+            .easyAutocomplete(options)
+            .focus(function() { $(this).select() });
     });
 </script>
 
 {% block bootstrap3_content %}
     <div class="container">
-        <form action="" method="post" class="form">
-            <input type="text" name="query" />
+        <form class="query-container">
+            {% csrf_token %}
+            <input id="client-query" type="text" name="query" />
+            <input id="client-id" type="hidden" name="client-id" />
         </form>
     </div>
 {% endblock %}

@@ -3,15 +3,16 @@ import json
 from functools import reduce
 from django import forms
 from django.http import HttpResponse, JsonResponse
+from django.shortcuts import render, get_object_or_404
 from django.template import loader
 from django.conf import settings
 from .models import Giveaway, Client
+from .forms import ClientModelForm
 
 DEFAULT_MONTH_GOODS_LIMIT = 10
 
 def index(request):
-    template = loader.get_template('giveaway/index.html')
-    return HttpResponse(template.render({}, request))
+    return render(request, 'giveaway/index.html', {})
 
 def list(request):
     latest_giveaways_list = Giveaway.objects.order_by('-date')[:10]
@@ -28,4 +29,10 @@ def _make_client_search_result_entry(client):
     giveaways = Giveaway.this_month_giveaways(client)
     goods = reduce(lambda n, g: n + g.goods_number, giveaways, 0)
     good_client_limit = getattr(settings, 'MONTH_GOODS_LIMIT', DEFAULT_MONTH_GOODS_LIMIT)
-    return {'client': str(client),'is_good': goods < good_client_limit}
+    return {'name': str(client), 'is_good': goods < good_client_limit, 'id': client.id}
+
+def view_client(request, pk):
+    logging.error(pk)
+    client = get_object_or_404(Client, pk = pk)
+    form = ClientModelForm(instance = client)
+    return render(request, 'giveaway/client_giveaways.html', {'form': form})
