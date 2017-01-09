@@ -7,10 +7,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-08 13:59+0300\n"
-"PO-Revision-Date: 2017-01-08 14:12+0300\n"
+"POT-Creation-Date: 2017-01-10 01:50+0300\n"
+"PO-Revision-Date: 2017-01-10 01:50+0300\n"
 "Last-Translator: Pavel Tolstov <ray66rus@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language-Team: \n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,7 +18,31 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.8.7.1\n"
+
+#: giveaway/forms.py:17 giveaway/forms.py:24
+msgid "First name"
+msgstr "Имя"
+
+#: giveaway/forms.py:18 giveaway/forms.py:25
+msgid "Last name"
+msgstr "Фамилия"
+
+#: giveaway/forms.py:19 giveaway/forms.py:26
+msgid "Patronymic"
+msgstr "Отчество"
+
+#: giveaway/forms.py:20
+msgid "Code word"
+msgstr "Кодовое слово"
+
+#: giveaway/forms.py:21 giveaway/forms.py:28
+msgid "Year of birth"
+msgstr "Год рождения"
+
+#: giveaway/forms.py:27
+msgid "none"
+msgstr "нет"
 
 #: giveaway/models.py:24
 msgid "year of birth"
