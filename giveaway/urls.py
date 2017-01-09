@@ -7,5 +7,6 @@ from . import views
 urlpatterns = [
         url(r'^$', views.index, name='index'),
         url(r'^list$', views.list, name='list'),
+        url(r'^client/(?P<pk>\w+)/$', views.view_client, name='view_client_data'),
         url(r'^find_clients$', views.find_clients, name='find_clients'),
     ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
