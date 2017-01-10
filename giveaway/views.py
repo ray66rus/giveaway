@@ -28,7 +28,10 @@ def _make_client_search_result_entry(client):
     good_client_limit = Giveaway.month_goods_limit()
     return {'name': str(client), 'is_good': goods < good_client_limit, 'id': client.id}
 
-def view_client(request, pk):
+def update_client_giveaways(request, pk):
     client = get_object_or_404(Client, pk = pk)
     form = ClientModelForm(instance = client)
-    return render(request, 'giveaway/client_giveaways.html', {'form': form})
+    goods = Giveaway.this_month_goods(client)
+    good_client_limit = Giveaway.month_goods_limit()
+    return render(request, 'giveaway/client_giveaways.html',
+        {'form': form, 'goods_left': max(good_client_limit - goods, 0)})
