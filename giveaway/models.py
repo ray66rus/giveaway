@@ -26,10 +26,11 @@ class Client(models.Model):
             res += " ({})".format(self.code_word)
         return res
 
-    def find_by_query(query):
+    @classmethod
+    def find_by_query(cls, query):
         if len(query) == 0 or query.isspace():
             return []
-        clients = Client.objects.all()
+        clients = cls.objects.all()
         for token in query.split():
             clients = clients.filter(models.Q(first_name__iregex='^{}'.format(token)) |
                                      models.Q(last_name__iregex='^{}'.format(token)) |
@@ -47,8 +48,9 @@ class Giveaway(models.Model):
         verbose_name="client object",
     )
 
-    def this_month_giveaways(client=None):
+    @classmethod
+    def this_month_giveaways(cls, client=None):
         today = datetime.now()
-        giveaways = Giveaway.objects.filter(date__year=today.year, date__month=today.month)
+        giveaways = cls.objects.filter(date__year=today.year, date__month=today.month)
         return giveaways.filter(client__id=client.id) if client else giveways
 
