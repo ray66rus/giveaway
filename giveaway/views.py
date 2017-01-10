@@ -9,8 +9,6 @@ from django.conf import settings
 from .models import Giveaway, Client
 from .forms import ClientModelForm
 
-DEFAULT_MONTH_GOODS_LIMIT = 10
-
 def index(request):
     return render(request, 'giveaway/index.html', {})
 
@@ -26,9 +24,8 @@ def find_clients(request):
         content_type="application/json; charset=utf-8")
 
 def _make_client_search_result_entry(client):
-    giveaways = Giveaway.this_month_giveaways(client)
-    goods = reduce(lambda n, g: n + g.goods_number, giveaways, 0)
-    good_client_limit = getattr(settings, 'MONTH_GOODS_LIMIT', DEFAULT_MONTH_GOODS_LIMIT)
+    goods = Giveaway.this_month_goods(client)
+    good_client_limit = Giveaway.month_goods_limit()
     return {'name': str(client), 'is_good': goods < good_client_limit, 'id': client.id}
 
 def view_client(request, pk):

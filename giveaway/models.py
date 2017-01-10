@@ -1,10 +1,12 @@
 import logging
+from functools import reduce
 from django.db import models
 from django.conf import settings
 from datetime import datetime
 from django.utils.translation import ugettext as _
 
 DEFAULT_SEARCH_LIMIT = 5
+DEFAULT_MONTH_GOODS_LIMIT = 10
 
 class Client(models.Model):
     first_name = models.TextField()
@@ -53,4 +55,13 @@ class Giveaway(models.Model):
         today = datetime.now()
         giveaways = cls.objects.filter(date__year=today.year, date__month=today.month)
         return giveaways.filter(client__id=client.id) if client else giveways
+
+    @classmethod
+    def this_month_goods(cls, client):
+        giveaways = cls.this_month_giveaways(client)
+        return reduce(lambda n, g: n + g.goods_number, giveaways, 0)
+
+    @staticmethod
+    def month_goods_limit():
+        return getattr(settings, 'MONTH_GOODS_LIMIT', DEFAULT_MONTH_GOODS_LIMIT)
 
