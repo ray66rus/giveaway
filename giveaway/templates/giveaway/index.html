@@ -26,7 +26,8 @@
 				},
                 onSelectItemEvent: function() {
                     $("#client-id").val($("#client-query").getSelectedItemData().id);
-                }
+                },
+                onChooseEvent: go_to_client_giveaways,
 			},
 			template: {
 				type: "custom",
@@ -44,11 +45,18 @@
             .easyAutocomplete(options)
             .focus(function() { $(this).select() });
     });
+
+    function go_to_client_giveaways() {
+        var clientId = $('#client-id').val();
+        var url = "{% url 'client_giveaways' pk='' %}".replace(/\/{2}$/, '/' + clientId + '/');
+        window.location = url;
+        return false;
+    }
 </script>
 
 {% block bootstrap3_content %}
     <div class="container">
-        <form class="query-container">
+        <form class="query-container" onsubmit="return go_to_client_giveaways()">
             {% csrf_token %}
             <input id="client-query" type="text" name="query" />
             <input id="client-id" type="hidden" name="client-id" />
