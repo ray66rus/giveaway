@@ -14,12 +14,14 @@
 
 {% block bootstrap3_content %}
 <div class='container'>
+{% bootstrap_messages %}
 <form class="form" method="POST">
     {% csrf_token %}
     {% bootstrap_form form %}
 	<div class="form-group">
 		<label class="control-label">{% trans 'To give' %}
-			<input class="form-control" id="id_goods_number" placeholder="0" title="" type="number" min="0" max="{{goods_left}}" name="goods_number" />
+			<input class="form-control" id="id_goods_number" placeholder="0" title="" type="number" min="0"
+				max="{{goods_left}}" name="goods_number" />
 		</label>
 		<label class="control-label">{% trans 'Left for month' %}
 			<input class="form-control" id="id_goods_number_left" title="" type="number" disabled="" value="{{goods_left}}" name="goods_number_left" />

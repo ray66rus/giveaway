@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-11 02:20+0300\n"
-"PO-Revision-Date: 2017-01-11 02:20+0300\n"
+"POT-Creation-Date: 2017-01-15 18:59+0300\n"
+"PO-Revision-Date: 2017-01-15 18:59+0300\n"
 "Last-Translator: Pavel Tolstov <ray66rus@gmail.com>\n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -48,14 +48,27 @@ msgstr "Год рождения"
 msgid "year of birth"
 msgstr "г.р."
 
-#: giveaway/templates/giveaway/client_giveaways.html:21
+#: giveaway/templates/giveaway/client_giveaways.html:22
 msgid "To give"
 msgstr "Выдать"
 
-#: giveaway/templates/giveaway/client_giveaways.html:24
+#: giveaway/templates/giveaway/client_giveaways.html:26
 msgid "Left for month"
 msgstr "Осталось на месяц"
 
-#: giveaway/templates/giveaway/client_giveaways.html:27
+#: giveaway/templates/giveaway/client_giveaways.html:29
 msgid "Submit"
 msgstr "Применить"
+
+#: giveaway/views.py:42
+msgid "Goods number should be an integer greater than 0"
+msgstr "Введите количество выданных вещей"
+
+#: giveaway/views.py:44
+#, python-format
+msgid "Goods number shouldn't be more than %(value)i"
+msgstr "Количество вещей не может быть больше, чем %(value)i"
+
+#: giveaway/views.py:59
+msgid "Giveaway added"
+msgstr "Выдача вещей учтена"

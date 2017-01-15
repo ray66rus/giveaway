@@ -1,11 +1,14 @@
 import logging
 import json
+import datetime
 from functools import reduce
 from django import forms
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render, get_object_or_404
 from django.template import loader
 from django.conf import settings
+from django.contrib import messages
+from django.utils.translation import ugettext as _
 from .models import Giveaway, Client
 from .forms import ClientModelForm
 
@@ -28,10 +31,33 @@ def _make_client_search_result_entry(client):
     good_client_limit = Giveaway.month_goods_limit()
     return {'name': str(client), 'is_good': goods < good_client_limit, 'id': client.id}
 
-def update_client_giveaways(request, pk):
+class BadGoodsNumberError(Exception):
+    def __init__(self, message):
+        self.message = message
+
+def client_giveaways(request, pk):
+    def _create_giveaway():
+        goods_number = request.POST.get('goods_number', '0')
+        if goods_number == '' or goods_number == '0':
+            raise BadGoodsNumberError(_('Goods number should be an integer greater than 0'))
+        if goods_client_limit < int(goods_number):
+            raise BadGoodsNumberError(_("Goods number shouldn't be more than %(value)i") % {'value': goods_client_limit})
+        giveaway = Giveaway(goods_number = goods_number, client = client, date = datetime.date.today())
+        giveaway.save()
+        logging.error(giveaway)
+
     client = get_object_or_404(Client, pk = pk)
     form = ClientModelForm(instance = client)
     goods = Giveaway.this_month_goods(client)
-    good_client_limit = Giveaway.month_goods_limit()
+    goods_client_limit = Giveaway.month_goods_limit() - goods
+    if request.method == 'POST':
+        try:
+            _create_giveaway()
+        except BadGoodsNumberError as e:
+            messages.error(request, e.message)
+        else:
+            goods_client_limit -= int(request.POST.get('goods_number'))
+            messages.info(request, _('Giveaway added'))
+
     return render(request, 'giveaway/client_giveaways.html',
-        {'form': form, 'goods_left': max(good_client_limit - goods, 0)})
+        {'form': form, 'goods_left': max(goods_client_limit, 0)})
