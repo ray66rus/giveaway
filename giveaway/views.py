@@ -48,6 +48,7 @@ def client_giveaways(request, pk):
 
     client = get_object_or_404(Client, pk = pk)
     form = ClientModelForm(instance = client)
+    for field in form.fields.values(): field.widget.attrs['disabled'] = True
     goods = Giveaway.this_month_goods(client)
     goods_client_limit = Giveaway.month_goods_limit() - goods
     if request.method == 'POST':

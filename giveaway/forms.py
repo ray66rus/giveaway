@@ -1,3 +1,4 @@
+import logging
 from django.forms import ModelForm, TextInput, NumberInput
 from django.utils.translation import ugettext as _
 from .models import Client
@@ -7,12 +8,10 @@ class ClientModelForm(ModelForm):
         model = Client
         fields = ('first_name', 'patronymic', 'last_name', 'year_of_birth', 'code_word')
         widgets = {
-            'first_name': TextInput(attrs = {'disabled': True}),
-            'last_name': TextInput(attrs = {'disabled': True}),
-            'patronymic': TextInput(attrs = {'disabled': True}),
-            'code_word': TextInput(attrs = {'disabled': True,
-                'placeholder': '(' + _('none') + ')'}),
-            'year_of_birth': NumberInput(attrs = {'disabled': True}),
+            'first_name': TextInput(),
+            'last_name': TextInput(),
+            'patronymic': TextInput(),
+            'code_word': TextInput(attrs = {'placeholder': '(' + _('none') + ')'})
         }
         labels = {
             'first_name': _('First name'),
