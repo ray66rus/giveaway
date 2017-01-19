@@ -1,0 +1,27 @@
+{% load i18n %}
+
+<script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+
+{% load bootstrap3 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'giveaway/main.css' %}" />
+
+{% block bootstrap3_content %}
+<div class='container'>
+{% bootstrap_messages %}
+<form class="form" method="POST">
+    {% csrf_token %}
+    {% bootstrap_form form %}
+    {% buttons %}
+        <button type="submit" class="btn btn-primary">{% trans 'Submit' %}</button>
+    {% endbuttons %}
+</form>
+
+</div>
+{% endblock %}

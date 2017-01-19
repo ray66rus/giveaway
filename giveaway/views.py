@@ -11,6 +11,7 @@ from django.contrib import messages
 from django.utils.translation import ugettext as _
 from .models import Giveaway, Client
 from .forms import ClientModelForm
+from django.views.generic.edit import CreateView
 
 def index(request):
     return render(request, 'giveaway/index.html', {})
@@ -62,3 +63,8 @@ def client_giveaways(request, pk):
 
     return render(request, 'giveaway/client_giveaways.html',
         {'form': form, 'goods_left': max(goods_client_limit, 0)})
+
+
+class CreateClientView(CreateView):
+    model = Client
+    form_class = ClientModelForm

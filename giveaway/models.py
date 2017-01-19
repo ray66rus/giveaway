@@ -3,6 +3,7 @@ from functools import reduce
 from django.db import models
 from django.conf import settings
 from datetime import datetime
+from django.urls import reverse
 from django.utils.translation import ugettext as _
 
 DEFAULT_SEARCH_LIMIT = 5
@@ -27,6 +28,9 @@ class Client(models.Model):
         if self.code_word != '':
             res += " ({})".format(self.code_word)
         return res
+
+    def get_absolute_url(self):
+        return reverse('client_giveaways', kwargs={'pk': self.pk})
 
     @classmethod
     def find_by_query(cls, query):

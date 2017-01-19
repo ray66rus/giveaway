@@ -4,6 +4,10 @@ from django.utils.translation import ugettext as _
 from .models import Client
 
 class ClientModelForm(ModelForm):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields['code_word'].required = False
+
     class Meta:
         model = Client
         fields = ('first_name', 'patronymic', 'last_name', 'year_of_birth', 'code_word')
@@ -11,7 +15,8 @@ class ClientModelForm(ModelForm):
             'first_name': TextInput(),
             'last_name': TextInput(),
             'patronymic': TextInput(),
-            'code_word': TextInput(attrs = {'placeholder': '(' + _('none') + ')'})
+            'code_word': TextInput(attrs={'placeholder': '(' + _('none') + ')'}),
+            'year_of_birth': NumberInput(attrs={'min': 1900, 'max': 2020}),
         }
         labels = {
             'first_name': _('First name'),
