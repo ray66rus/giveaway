@@ -62,7 +62,15 @@ def client_giveaways(request, pk):
             messages.info(request, _('Giveaway added'))
 
     return render(request, 'giveaway/client_giveaways.html',
-        {'form': form, 'goods_left': max(goods_client_limit, 0)})
+        {'form': form, 'client_id': client.id, 'goods_left': max(goods_client_limit, 0)})
+
+
+def giveaways_list_by_client(request, client_id):
+    res = [{"date": str(r.date), "goods_number": str(r.goods_number)}
+        for r in Giveaway.giveaways_by_client(client_id)
+    ]
+    return HttpResponse(json.dumps(res, ensure_ascii=False),
+        content_type="application/json; charset=utf-8")
 
 
 class CreateClientView(CreateView):

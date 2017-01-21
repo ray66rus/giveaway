@@ -65,6 +65,10 @@ class Giveaway(models.Model):
         giveaways = cls.this_month_giveaways(client)
         return reduce(lambda n, g: n + g.goods_number, giveaways, 0)
 
+    @classmethod
+    def giveaways_by_client(cls, client_id):
+        return cls.objects.filter(client__id=client_id)
+
     @staticmethod
     def month_goods_limit():
         return getattr(settings, 'MONTH_GOODS_LIMIT', DEFAULT_MONTH_GOODS_LIMIT)

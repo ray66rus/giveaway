@@ -11,6 +11,25 @@
 
 {% load static %}
 <link rel="stylesheet" type="text/css" href="{% static 'giveaway/main.css' %}" />
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/ju-1.11.4/dt-1.10.13/datatables.min.css"/>
+ 
+<script type="text/javascript" src="https://cdn.datatables.net/v/ju-1.11.4/dt-1.10.13/datatables.min.js"></script>
+
+<script>
+	$(document).ready(function() {
+		$('#giveaways').DataTable({
+			"ajax": {
+				"url" : "{% url 'client_giveaways_list' client_id=client_id %}",
+				"dataSrc": ""
+			},
+			"columns": [
+				{ "data": "date" },
+				{ "data": "goods_number" }
+			],
+			"order": [[ 0, "desc" ]]
+		});
+	})
+</script>
 
 {% block bootstrap3_content %}
 <div class='container'>
@@ -29,6 +48,25 @@
 		<button type="submit" class="btn btn-primary">{% trans 'Submit' %}</button>
 	</div>
 </form>
+
+<table id="giveaways" class="display" cellspacing="0" width="100%">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Goods Number</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </tbody>
+</table>
 
 </div>
 {% endblock %}
