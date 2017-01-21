@@ -1,12 +1,19 @@
 import logging
 from django.forms import ModelForm, TextInput, NumberInput
 from django.utils.translation import ugettext as _
+from django.core.exceptions import ValidationError
 from .models import Client
 
 class ClientModelForm(ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.fields['code_word'].required = False
+
+    def validate_unique(self):
+        try:
+            self.instance.validate_unique()
+        except ValidationError as e:
+            self._update_errors(e.message_dict)
 
     class Meta:
         model = Client
